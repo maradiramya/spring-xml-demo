@@ -21,9 +21,9 @@
     <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">
 
     </bean>
-    <bean id="movie2" class="com.stackroute.domain.Movie">
-        <constructor-arg name="actor" ref="actor"></constructor-arg>
-    </bean>
+<!--    <bean id="movie2" class="com.stackroute.domain.Movie">-->
+<!--        <constructor-arg name="actor" ref="actor"></constructor-arg>-->
+<!--    </bean>-->
 
 
 </beans>
