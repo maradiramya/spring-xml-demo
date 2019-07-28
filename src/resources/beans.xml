@@ -24,6 +24,8 @@
 <!--    <bean id="movie2" class="com.stackroute.domain.Movie">-->
 <!--        <constructor-arg name="actor" ref="actor"></constructor-arg>-->
 <!--    </bean>-->
+<bean id="beanlifecycledemobean" class="com.stackroute.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
 
+</bean>
 
 </beans>
