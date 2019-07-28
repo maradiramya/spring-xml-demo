@@ -10,22 +10,23 @@ import org.springframework.core.io.ClassPathResource;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Movie movie = (Movie) context.getBean("movieA");
+        Movie movie = (Movie) context.getBean("movie");
         System.out.println(movie);
 
 
-        Movie movie1 = (Movie) context.getBean("movie");
-        System.out.println(movie1);
+        Movie movie2 = (Movie) context.getBean("movie2");
+        System.out.println(movie2);
 
-        System.out.println(movie == movie1);
 
         Actor actor = (Actor) context.getBean("actor");
         Actor actor1 = (Actor) context.getBean("actor1");
         Actor actor2 = (Actor) context.getBean("actor2");
 
-        System.out.println(actor.toString());
-        System.out.println(actor1.toString());
-        System.out.println(actor2.toString());
+        System.out.println(actor);
+        System.out.println(actor1);
+        System.out.println(actor2);
+        //if we try to autowire bytype we will get this exception thrown
+      // org.springframework.beans.factory.UnsatisfiedDependencyException
 
 
     }
