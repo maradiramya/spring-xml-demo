@@ -19,7 +19,7 @@ public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean
     }
     public void customInit()
     {
-        System.out.println("init mathod is created");
+        System.out.println("the mathod is run through the init");
 
     }
     public void customDestroy()
